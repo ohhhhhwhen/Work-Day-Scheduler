@@ -1,0 +1,32 @@
+.jumbotron{
+    background-color: white;
+}
+
+hr{
+    color: black;
+}
+
+.form-control{
+    width: 846px;
+    margin-left: 0px;
+    border: none;
+}
+
+.input-background{
+    /* color: rgb(0, 187, 0) !important; */
+    background-color: rgb(0, 187, 0) !important;
+    border: none;
+}
+
+img, .locked{
+    background-color: rgb(7, 156, 255);
+}
+
+.past-time{
+    background-color: rgb(155, 155, 155) !important;
+    border: none
+}
+
+.current-time{
+    background-color: rgb(255, 0, 0);
+}

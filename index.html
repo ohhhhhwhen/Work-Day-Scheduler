@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Day Planner</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container text-center">
+        <h1 class="display-4">Work Day Scheduler</h1>
+        <p class="lead">
+          A simple calendar app for scheduling you work day<br/>
+          Saturday January 4, 2020
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <table class="table">
+        <!-- <thead>
+          <tr>
+            <th scope="col">Hour</th>
+            <th scope="col">Info</th>
+            <th scope="col">Lock</th>
+          </tr>
+        </thead> -->
+        <tbody class="tableBody">
+          <tr>
+            <td class="hour9" data-value="9">
+              <span>9 AM</span>
+            </td>
+            <!-- <td> -->
+            <td class="input-background">
+              <form>
+                <div class="form-group">
+                  <input
+                    id="info1"
+                    type="text"
+                    class="form-control input-background"
+                    id="exampleFormControlInput1"
+                  />
+                </div>
+              </form>
+              <!-- <textarea class="input-background" id="info1"></textarea> -->
+            </td>
+            <td class="locked">
+              <img src="images/lock-img.png" height="50" width="50" />
+            </td>
+          </tr>
+          <tr>
+            <td class="hour10" data-value="10">
+              <span>10 AM</span>
+            </td>
+            <td class="input-background">
+              <form>
+                <div class="form-group">
+                  <input
+                    id="info2"
+                    type="text"
+                    class="form-control input-background"
+                    id="exampleFormControlInput1"
+                  />
+                </div>
+              </form>
+            </td>
+            <td class="locked">
+              <img src="images/lock-img.png" height="50" width="50" />
+            </td>
+          </tr>
+          <tr>
+            <td class="hour11" data-value="11">
+              <span>11 AM</span>
+            </td>
+            <td class="input-background">
+              <form>
+                <div class="form-group">
+                  <input
+                    id="info3"
+                    type="text"
+                    class="form-control input-background"
+                    id="exampleFormControlInput1"
+                  />
+                </div>
+              </form>
+            </td>
+            <td class="locked">
+              <img src="images/lock-img.png" height="50" width="50" />
+            </td>
+          </tr>
+          <tr>
+            <td class="hour12" data-value="12">
+              <span>12 PM</span>
+            </td>
+            <td class="input-background">
+              <form>
+                <div class="form-group">
+                  <input
+                    id="info4"
+                    type="text"
+                    class="form-control input-background"
+                    id="exampleFormControlInput1"
+                  />
+                </div>
+              </form>
+            </td>
+            <td class="locked">
+              <img src="images/lock-img.png" height="50" width="50" />
+            </td>
+          </tr>
+          <tr>
+            <td class="hour1" data-value="13">
+              <span>1 PM</span>
+            </td>
+            <td class="input-background">
+              <form>
+                <div class="form-group">
+                  <input
+                    id="info5"
+                    type="text"
+                    class="form-control input-background"
+                    id="exampleFormControlInput1"
+                  />
+                </div>
+              </form>
+            </td>
+            <td class="locked">
+              <img src="images/lock-img.png" height="50" width="50" />
+            </td>
+          </tr>
+          <tr>
+            <td class="hour2" data-value="14">
+              <span>2 PM</span>
+            </td>
+            <td class="input-background">
+              <form>
+                <div class="form-group">
+                  <input
+                    id="info6"
+                    type="text"
+                    class="form-control input-background"
+                    id="exampleFormControlInput1"
+                  />
+                </div>
+              </form>
+            </td>
+            <td class="locked">
+              <img src="images/lock-img.png" height="50" width="50" />
+            </td>
+          </tr>
+          <tr>
+            <td class="hour3" data-value="15">
+              <span>3 PM</span>
+            </td>
+            <td class="input-background">
+              <form>
+                <div class="form-group">
+                  <input
+                    id="info7"
+                    type="text"
+                    class="form-control input-background"
+                    id="exampleFormControlInput1"
+                  />
+                </div>
+              </form>
+            </td>
+            <td class="locked">
+              <img src="images/lock-img.png" height="50" width="50" />
+            </td>
+          </tr>
+          <tr>
+            <td class="hour4" data-value="16">
+              <span>4 PM</span>
+            </td>
+            <td class="input-background">
+              <form>
+                <div class="form-group">
+                  <input
+                    id="info8"
+                    type="text"
+                    class="form-control input-background"
+                    id="exampleFormControlInput1"
+                  />
+                </div>
+              </form>
+            </td>
+            <td class="locked">
+              <img src="images/lock-img.png" height="50" width="50" />
+            </td>
+          </tr>
+          <tr>
+            <td class="hour5" data-value="17">
+              <span>5 PM</span>
+            </td>
+            <td class="input-background">
+              <form>
+                <div class="form-group">
+                  <input
+                    id="info9"
+                    type="text"
+                    class="form-control input-background"
+                    id="exampleFormControlInput1"
+                  />
+                </div>
+              </form>
+            </td>
+            <td class="locked">
+              <img src="images/lock-img.png" height="50" width="50" />
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
