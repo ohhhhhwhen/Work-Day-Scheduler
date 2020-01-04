@@ -38,7 +38,7 @@ $(document).ready(function() {
 
   if (parseInt(numHour9) < parseInt(time)) {
     console.log("change color to grey");
-    $("info1").addClass("past-time");
+    inputLine1.addClass("past-time");
   } else if (parseInt(numHour9) === parseInt(time))  {
     console.log("change color to red");
     inputLine1.toggleClass("current-time");
