@@ -1,9 +1,8 @@
 var time = moment().format("H");
 console.log(time);
-var theDate = moment().format("dddd MMMM Do YYYY, h:mm:ss a")
+var theDate = moment().format("dddd MMMM Do YYYY, h:mm:ss a");
 var bodyDate = $(".date");
 $(bodyDate).text(theDate);
-
 
 $(document).ready(function() {
   var hour9 = $(".hour9");
@@ -142,7 +141,7 @@ $(document).ready(function() {
   }
 });
 
-var lock1 = $(".locked1");
+var lock1 = $(".locked");
 var lock2 = $(".locked2");
 var lock3 = $(".locked3");
 var lock4 = $(".locked4");
@@ -156,8 +155,10 @@ lock1.on("click", function() {
   alert("Schedule Updated");
   var inputentry1 = document.querySelector("#info1b").value;
   console.log(inputentry1);
-  var updatedTask = document.getElementById("info1b");
-  updatedTask.innerHTML = inputentry1;
+  var inputKey1 = "task1";
+  localStorage.setItem(inputKey1, inputentry1);
+  console.log(localStorage.getItem(inputKey1));
+  inputentry1.value = localStorage.getItem(inputKey1);
 });
 
 lock2.on("click", function() {
@@ -172,49 +173,49 @@ lock3.on("click", function() {
   console.log(inputentry3);
 });
 
-lock1.on("click", function() {
+lock4.on("click", function() {
   alert("Schedule Updated");
   var inputentry4 = document.querySelector("#info4b").value;
   console.log(inputentry4);
 });
 
-lock1.on("click", function() {
+lock5.on("click", function() {
   alert("Schedule Updated");
   var inputentry5 = document.querySelector("#info5b").value;
   console.log(inputentry5);
 });
 
-lock1.on("click", function() {
+lock6.on("click", function() {
   alert("Schedule Updated");
   var inputentry6 = document.querySelector("#info6b").value;
   console.log(inputentry6);
 });
 
-lock1.on("click", function() {
+lock7.on("click", function() {
   alert("Schedule Updated");
   var inputentry7 = document.querySelector("#info7b").value;
   console.log(inputentry7);
 });
 
-lock1.on("click", function() {
+lock8.on("click", function() {
   alert("Schedule Updated");
   var inputentry8 = document.querySelector("#info8b").value;
   console.log(inputentry8);
 });
 
-lock1.on("click", function() {
+lock9.on("click", function() {
   alert("Schedule Updated");
   var inputentry9 = document.querySelector("#info9b").value;
   console.log(inputentry9);
 });
 
-// var theInfo = document.getElementById("info1");
+// var theInfo = document.getElementById("info1b");
 // function lockedIn() {
 //   alert("Schedule Updated");
 //   var inputentry1 = document.querySelector('#info1b').value;
 //   console.log(inputentry1);
 
-//   // var hourTask = theInfo.innerHTML;
-//   // localStorage.setItem(inputKey, hourTask);
-//   // console.log(localStorage.getItem(inputKey));
+// var hourTask = theInfo.innerHTML;
+// localStorage.setItem(inputKey, hourTask);
+// console.log(localStorage.getItem(inputKey));
 // }
