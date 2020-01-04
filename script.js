@@ -8,38 +8,38 @@ $(document).ready(function() {
 
   var hour9 = $(".hour9");
   var numHour9 = hour9.attr("data-value");
-  var inputLine1 = $("info1");
+  var inputLine1 = $("#info1");
   var hour10 = $(".hour10");
   var numHour10 = hour10.attr("data-value");
-  var inputLine2 = $("info2");
+  var inputLine2 = $("#info2");
   var hour11 = $(".hour11");
   var numHour11 = hour11.attr("data-value");
-  var inputLine3 = $("info3");
+  var inputLine3 = $("#info3");
   var hour12 = $(".hour12");
   var numHour12 = hour12.attr("data-value");
-  var inputLine4 = $("info4");
+  var inputLine4 = $("#info4");
   var hour1 = $(".hour1");
   var numHour1 = hour1.attr("data-value");
-  var inputLine5 = $("info5");
+  var inputLine5 = $("#info5");
   var hour2 = $(".hour2");
   var numHour2 = hour2.attr("data-value");
-  var inputLine6 = $("info6");
+  var inputLine6 = $("#info6");
   var hour3 = $(".hour3");
   var numHour3 = hour3.attr("data-value");
-  var inputLine7 = $("info7");
+  var inputLine7 = $("#info7");
   var hour4 = $(".hour4");
   var numHour4 = hour4.attr("data-value");
-  var inputLine8 = $("info8");
+  var inputLine8 = $("#info8");
   var hour5 = $(".hour5");
   var numHour5 = hour5.attr("data-value");
-  var inputLine9 = $("info9");
+  var inputLine9 = $("#info9");
 
   console.log(numHour9);
 
-  if (numHour9 < time) {
+  if (parseInt(numHour9) < parseInt(time)) {
     console.log("change color to grey");
-    inputLine1.toggleClass("past-time");
-  } else if (numHour9 === time) {
+    $("info1").addClass("past-time");
+  } else if (parseInt(numHour9) === parseInt(time))  {
     console.log("change color to red");
     inputLine1.toggleClass("current-time");
   }
@@ -53,10 +53,8 @@ var inputKey = "inputTask";
 
 function lockedIn() {
   alert("Schedule Updated");
-  //   var currow = $(this).closest("tr");
-  //   var col1 = currow.find("td:eq(0)").value;
-  //   console.log(col1);
-  var hourTask = theInfo.innerHTML;
-  localStorage.setItem(inputKey, hourTask);
-  console.log(localStorage.getItem(inputKey));
+  
+  // var hourTask = theInfo.innerHTML;
+  // localStorage.setItem(inputKey, hourTask);
+  // console.log(localStorage.getItem(inputKey));
 }
