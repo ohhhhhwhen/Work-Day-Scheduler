@@ -17,42 +17,32 @@
     <div class="jumbotron jumbotron-fluid">
       <div class="container text-center">
         <h1 class="display-4">Work Day Scheduler</h1>
-        <p class="lead">
-          A simple calendar app for scheduling you work day<br/>
-          Saturday January 4, 2020
+        <p>
+          A simple calendar app for scheduling you work day
         </p>
+        <p class="date"></p>
       </div>
     </div>
     <hr />
     <div class="container">
       <table class="table">
-        <!-- <thead>
-          <tr>
-            <th scope="col">Hour</th>
-            <th scope="col">Info</th>
-            <th scope="col">Lock</th>
-          </tr>
-        </thead> -->
         <tbody class="tableBody">
           <tr>
             <td class="hour9" data-value="9">
               <span>9 AM</span>
             </td>
-            <!-- <td> -->
-            <td class="input-background">
+            <td class="input-background" id="info1a">
               <form>
                 <div class="form-group">
                   <input
-                    id="info1"
                     type="text"
+                    id="info1b"
                     class="form-control input-background"
-                    id="exampleFormControlInput1"
                   />
                 </div>
               </form>
-              <!-- <textarea class="input-background" id="info1"></textarea> -->
             </td>
-            <td class="locked">
+            <td class="locked1 locked">
               <img src="images/lock-img.png" height="50" width="50" />
             </td>
           </tr>
@@ -60,19 +50,18 @@
             <td class="hour10" data-value="10">
               <span>10 AM</span>
             </td>
-            <td class="input-background">
+            <td class="input-background" id="info2a">
               <form>
                 <div class="form-group">
                   <input
-                    id="info2"
                     type="text"
+                    id="info2b"
                     class="form-control input-background"
-                    id="exampleFormControlInput1"
                   />
                 </div>
               </form>
             </td>
-            <td class="locked">
+            <td class="locked2 locked">
               <img src="images/lock-img.png" height="50" width="50" />
             </td>
           </tr>
@@ -80,19 +69,18 @@
             <td class="hour11" data-value="11">
               <span>11 AM</span>
             </td>
-            <td class="input-background">
+            <td class="input-background" id="info3a">
               <form>
                 <div class="form-group">
                   <input
-                    id="info3"
                     type="text"
+                    id="info3b"
                     class="form-control input-background"
-                    id="exampleFormControlInput1"
                   />
                 </div>
               </form>
             </td>
-            <td class="locked">
+            <td class="locked3 locked">
               <img src="images/lock-img.png" height="50" width="50" />
             </td>
           </tr>
@@ -100,19 +88,18 @@
             <td class="hour12" data-value="12">
               <span>12 PM</span>
             </td>
-            <td class="input-background">
+            <td class="input-background" id="info4a">
               <form>
                 <div class="form-group">
                   <input
-                    id="info4"
                     type="text"
+                    id="info4b"
                     class="form-control input-background"
-                    id="exampleFormControlInput1"
                   />
                 </div>
               </form>
             </td>
-            <td class="locked">
+            <td class="locked4 locked">
               <img src="images/lock-img.png" height="50" width="50" />
             </td>
           </tr>
@@ -120,19 +107,18 @@
             <td class="hour1" data-value="13">
               <span>1 PM</span>
             </td>
-            <td class="input-background">
+            <td class="input-background" id="info5a">
               <form>
                 <div class="form-group">
                   <input
-                    id="info5"
                     type="text"
+                    id="info5b"
                     class="form-control input-background"
-                    id="exampleFormControlInput1"
                   />
                 </div>
               </form>
             </td>
-            <td class="locked">
+            <td class="locked5 locked">
               <img src="images/lock-img.png" height="50" width="50" />
             </td>
           </tr>
@@ -140,19 +126,18 @@
             <td class="hour2" data-value="14">
               <span>2 PM</span>
             </td>
-            <td class="input-background">
+            <td class="input-background" id="info6a">
               <form>
                 <div class="form-group">
                   <input
-                    id="info6"
                     type="text"
+                    id="info6b"
                     class="form-control input-background"
-                    id="exampleFormControlInput1"
                   />
                 </div>
               </form>
             </td>
-            <td class="locked">
+            <td class="locked6 locked">
               <img src="images/lock-img.png" height="50" width="50" />
             </td>
           </tr>
@@ -160,19 +145,18 @@
             <td class="hour3" data-value="15">
               <span>3 PM</span>
             </td>
-            <td class="input-background">
+            <td class="input-background" id="info7a">
               <form>
                 <div class="form-group">
                   <input
-                    id="info7"
                     type="text"
+                    id="info7b"
                     class="form-control input-background"
-                    id="exampleFormControlInput1"
                   />
                 </div>
               </form>
             </td>
-            <td class="locked">
+            <td class="locked7 locked">
               <img src="images/lock-img.png" height="50" width="50" />
             </td>
           </tr>
@@ -180,19 +164,18 @@
             <td class="hour4" data-value="16">
               <span>4 PM</span>
             </td>
-            <td class="input-background">
+            <td class="input-background" id="info8a">
               <form>
                 <div class="form-group">
                   <input
-                    id="info8"
                     type="text"
+                    id="info8b"
                     class="form-control input-background"
-                    id="exampleFormControlInput1"
                   />
                 </div>
               </form>
             </td>
-            <td class="locked">
+            <td class="locked8 locked">
               <img src="images/lock-img.png" height="50" width="50" />
             </td>
           </tr>
@@ -200,19 +183,18 @@
             <td class="hour5" data-value="17">
               <span>5 PM</span>
             </td>
-            <td class="input-background">
+            <td class="input-background" id="info9a">
               <form>
                 <div class="form-group">
                   <input
-                    id="info9"
                     type="text"
+                    id="info9b"
                     class="form-control input-background"
-                    id="exampleFormControlInput1"
                   />
                 </div>
               </form>
             </td>
-            <td class="locked">
+            <td class="locked9 locked">
               <img src="images/lock-img.png" height="50" width="50" />
             </td>
           </tr>
