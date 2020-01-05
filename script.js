@@ -1,5 +1,4 @@
 var time = moment().format("H");
-console.log(time);
 var theDate = moment().format("dddd MMMM Do YYYY, h:mm:ss a");
 var bodyDate = $(".date");
 $(bodyDate).text(theDate);
@@ -152,70 +151,69 @@ var lock8 = $(".locked8");
 var lock9 = $(".locked9");
 
 lock1.on("click", function() {
-  alert("Schedule Updated");
   var inputentry1 = document.querySelector("#info1b").value;
   console.log(inputentry1);
   var inputKey1 = "task1";
   localStorage.setItem(inputKey1, inputentry1);
-  console.log(localStorage.getItem(inputKey1));
-  inputentry1.value = localStorage.getItem(inputKey1);
 });
 
 lock2.on("click", function() {
-  alert("Schedule Updated");
   var inputentry2 = document.querySelector("#info2b").value;
   console.log(inputentry2);
+  var inputKey1 = "task2";
+  localStorage.setItem(inputKey2, inputentry2);
 });
 
 lock3.on("click", function() {
-  alert("Schedule Updated");
   var inputentry3 = document.querySelector("#info3b").value;
   console.log(inputentry3);
+  var inputKey1 = "task3";
+  localStorage.setItem(inputKey3, inputentry3);
 });
 
 lock4.on("click", function() {
-  alert("Schedule Updated");
   var inputentry4 = document.querySelector("#info4b").value;
   console.log(inputentry4);
+  var inputKey4 = "task4";
+  localStorage.setItem(inputKey4, inputentry4);
 });
 
 lock5.on("click", function() {
-  alert("Schedule Updated");
   var inputentry5 = document.querySelector("#info5b").value;
-  console.log(inputentry5);
+  var inputKey5 = "task5";
+  localStorage.setItem(inputKey5, inputentry5);
 });
 
 lock6.on("click", function() {
-  alert("Schedule Updated");
   var inputentry6 = document.querySelector("#info6b").value;
-  console.log(inputentry6);
+  var inputKey6 = "task6";
+  localStorage.setItem(inputKey6, inputentry6);
 });
 
 lock7.on("click", function() {
-  alert("Schedule Updated");
   var inputentry7 = document.querySelector("#info7b").value;
-  console.log(inputentry7);
+  var inputKey7 = "task7";
+  localStorage.setItem(inputKey7, inputentry7);
 });
 
 lock8.on("click", function() {
-  alert("Schedule Updated");
   var inputentry8 = document.querySelector("#info8b").value;
-  console.log(inputentry8);
+  var inputKey8 = "task8";
+  localStorage.setItem(inputKey8, inputentry8);
 });
 
 lock9.on("click", function() {
-  alert("Schedule Updated");
   var inputentry9 = document.querySelector("#info9b").value;
   console.log(inputentry9);
+  localStorage.setItem(inputKey9, inputentry9);
 });
 
-// var theInfo = document.getElementById("info1b");
-// function lockedIn() {
-//   alert("Schedule Updated");
-//   var inputentry1 = document.querySelector('#info1b').value;
-//   console.log(inputentry1);
-
-// var hourTask = theInfo.innerHTML;
-// localStorage.setItem(inputKey, hourTask);
-// console.log(localStorage.getItem(inputKey));
-// }
+document.querySelector("#info1b").value = localStorage.getItem("task1");
+document.querySelector("#info2b").value = localStorage.getItem("task2");
+document.querySelector("#info3b").value = localStorage.getItem("task3");
+document.querySelector("#info4b").value = localStorage.getItem("task4");
+document.querySelector("#info5b").value = localStorage.getItem("task5");
+document.querySelector("#info6b").value = localStorage.getItem("task6");
+document.querySelector("#info7b").value = localStorage.getItem("task7");
+document.querySelector("#info8b").value = localStorage.getItem("task8");
+document.querySelector("#info9b").value = localStorage.getItem("task9");
