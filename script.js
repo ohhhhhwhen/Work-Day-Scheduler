@@ -50,91 +50,73 @@ $(document).ready(function() {
   var inputLine9 = $("#info9b");
 
   if (parseInt(numHour9) < parseInt(time)) {
-    console.log("change color to grey");
     inputBox1.addClass("past-time");
     inputLine1.addClass("past-time");
   } else if (parseInt(numHour9) === parseInt(time)) {
-    console.log("change color to red");
     inputBox1.addClass("current-time");
     inputLine1.addClass("current-time");
   }
 
   if (parseInt(numHour10) < parseInt(time)) {
-    console.log("change color to grey");
     inputBox2.addClass("past-time");
     inputLine2.addClass("past-time");
   } else if (parseInt(numHour10) === parseInt(time)) {
-    console.log("change color to red");
     inputBox2.addClass("current-time");
     inputLine2.addClass("current-time");
   }
 
   if (parseInt(numHour11) < parseInt(time)) {
-    console.log("change color to grey");
     inputBox3.addClass("past-time");
     inputLine3.addClass("past-time");
   } else if (parseInt(numHour11) === parseInt(time)) {
-    console.log("change color to red");
     inputBox3.addClass("current-time");
     inputLine3.addClass("current-time");
   }
 
   if (parseInt(numHour12) < parseInt(time)) {
-    console.log("change color to grey");
     inputBox4.addClass("past-time");
     inputLine4.addClass("past-time");
   } else if (parseInt(numHour12) === parseInt(time)) {
-    console.log("change color to red");
     inputBox4.addClass("current-time");
     inputLine4.addClass("current-time");
   }
 
   if (parseInt(numHour1) < parseInt(time)) {
-    console.log("change color to grey");
     inputBox5.addClass("past-time");
     inputLine5.addClass("past-time");
   } else if (parseInt(numHour1) === parseInt(time)) {
-    console.log("change color to red");
     inputBox5.addClass("current-time");
     inputLine5.addClass("current-time");
   }
 
   if (parseInt(numHour2) < parseInt(time)) {
-    console.log("change color to grey");
     inputBox6.addClass("past-time");
     inputLine6.addClass("past-time");
   } else if (parseInt(numHour2) === parseInt(time)) {
-    console.log("change color to red");
     inputBox6.addClass("current-time");
     inputLine6.addClass("current-time");
   }
 
   if (parseInt(numHour3) < parseInt(time)) {
-    console.log("change color to grey");
     inputBox7.addClass("past-time");
     inputLine7.addClass("past-time");
   } else if (parseInt(numHour3) === parseInt(time)) {
-    console.log("change color to red");
     inputBox7.addClass("current-time");
     inputLine7.addClass("current-time");
   }
 
   if (parseInt(numHour4) < parseInt(time)) {
-    console.log("change color to grey");
     inputBox8.addClass("past-time");
     inputLine8.addClass("past-time");
   } else if (parseInt(numHour4) === parseInt(time)) {
-    console.log("change color to red");
     inputBox8.addClass("current-time");
     inputLine8.addClass("current-time");
   }
 
   if (parseInt(numHour5) < parseInt(time)) {
-    console.log("change color to grey");
     inputBox9.addClass("past-time");
     inputLine9.addClass("past-time");
   } else if (parseInt(numHour5) === parseInt(time)) {
-    console.log("change color to red");
     inputBox9.addClass("current-time");
     inputLine9.addClass("current-time");
   }
@@ -152,28 +134,25 @@ var lock9 = $(".locked9");
 
 lock1.on("click", function() {
   var inputentry1 = document.querySelector("#info1b").value;
-  console.log(inputentry1);
   var inputKey1 = "task1";
   localStorage.setItem(inputKey1, inputentry1);
 });
 
 lock2.on("click", function() {
   var inputentry2 = document.querySelector("#info2b").value;
-  console.log(inputentry2);
-  var inputKey1 = "task2";
+  var inputKey2 = "task2";
   localStorage.setItem(inputKey2, inputentry2);
 });
 
 lock3.on("click", function() {
   var inputentry3 = document.querySelector("#info3b").value;
   console.log(inputentry3);
-  var inputKey1 = "task3";
+  var inputKey3 = "task3";
   localStorage.setItem(inputKey3, inputentry3);
 });
 
 lock4.on("click", function() {
   var inputentry4 = document.querySelector("#info4b").value;
-  console.log(inputentry4);
   var inputKey4 = "task4";
   localStorage.setItem(inputKey4, inputentry4);
 });
@@ -204,7 +183,7 @@ lock8.on("click", function() {
 
 lock9.on("click", function() {
   var inputentry9 = document.querySelector("#info9b").value;
-  console.log(inputentry9);
+  var inputKey9 = "task9";
   localStorage.setItem(inputKey9, inputentry9);
 });
 
