@@ -27,13 +27,10 @@ Project is created with:
 ## Files / Running Page
 * Here are some screen shots of the running page from an images folder:
 
- ![Starting Page](images/quiz-start.png)
+ ![Starting Page](images/before-work.png)
 
- ![Question Choices Answers](images/qca.png)
+ ![During Work Page Update](images/during-work.png)
 
- ![Enter Initials](images/initials.png)
-
- ![HighScores](images/scores.png)
 
 ## Key Notes
 * Make sure to include the bootstrap link:
