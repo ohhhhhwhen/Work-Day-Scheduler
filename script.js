@@ -1,5 +1,5 @@
 var time = moment().format("H");
-var theDate = moment().format("dddd MMMM Do YYYY, Current Hour: h a");
+var theDate = moment().format("dddd MMMM Do YYYY");
 var bodyDate = $(".date");
 $(bodyDate).text(theDate);
 
